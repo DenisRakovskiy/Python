@@ -1,0 +1,8 @@
+size(500,500)
+noStroke()
+fill(0,200,50)
+triangle(250,0,300,50,200,50)
+translate(0,40)
+triangle(250,0,300,50,200,50)
+translate(0,40)
+triangle(250,0,300,50,200,50)
