@@ -1,0 +1,8 @@
+def setup() :
+size (500,500)
+textSize(15)
+fill(0)
+def draw() :
+background(255)
+text( 'x:'+str(mouseX),0,30)
+text(y:'+str(mouseY),0,60)
