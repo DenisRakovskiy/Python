@@ -1,0 +1,7 @@
+def setup():
+    size(500,500)
+    frameRate(-55)
+def draw():
+    if mousePressed:
+     circle(mouseX,mouseY,5)
+     if mousePressed
