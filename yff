@@ -1,0 +1,19 @@
+x=250
+y=250
+def setup():
+    size(500,500)
+def draw():
+    background(255)
+    circle(y,x,50)
+    stroke(60)
+def keyPressed():
+    global x
+    global y
+    if keyCode == (DOWN):
+        x+=3
+    if keyCode == (UP):
+        x-=3
+    if keyCode == (RIGHT):
+        y+=3
+    if keyCode == (LEFT):
+        y-=3
