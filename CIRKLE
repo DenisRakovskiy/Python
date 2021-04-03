@@ -1,0 +1,21 @@
+x = 0
+y = 0
+l = 5
+def setup():
+    size(600,600)
+    background(33,17,216)
+def draw(): 
+    background(33,17,216)
+    translate(300,300)
+    global x,y,l
+    fill(232,232,229)
+   #rect(200,250,200,100)
+    for a in range(30):
+        ellipse(x,y,50,50)
+        rotate(radians(6)) 
+    x = x + l
+    y = y + 0
+    if x > 300:
+        l = -5
+    if x < 0:
+        l = 5
