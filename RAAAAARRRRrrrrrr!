@@ -1,0 +1,26 @@
+x=10
+y=0
+def setup():
+    size(10000,1000)
+    textSize(40)
+def draw():
+    global x
+    global y
+    background(255,0,0)
+    text(y,30,30)
+    fill(255)
+    rect(0,50,x, 50)
+    stroke(255,0,0)
+    text(y,30,30)
+    x+=1
+    y+=1
+    if y<250:
+        square(300,700,50)
+    if y<100:
+        square(500,300,50)
+    if y<450:
+        square(700,700,50)
+    if y<750:
+        square(800,500,50)
+    if y<1000:
+        square(600,400,50)  
