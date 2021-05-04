@@ -1,21 +1,33 @@
 x=255
 t=500
 t-=15
+x1=500
+txt=0
+y1=
+y2=
 def setup() :
     size (500,500)
     textSize(15)
     fill(0)
     noStroke()
-
 def draw():
-    global x,t
+    global x,t,x1,txt
     x+=2
+    x1-=2
     background(255)
     fill(255,255,0)
     square(255,x,25)
-    quad(0,0,0,0,0,0,0,0)
+    fill(0,255,0)
+    rect(x1,y1, 50, 230)
+    rect(x1,y2, 50, 230)
+    textSize(20)
+    fill("#8531B9")
     text( 'x:'+str(mouseX),0,30)
     text('y:'+str(mouseY),0,60)
+    textSize(30)
+    text("score:",0,90)
+    text(txt,0,120)
+    fill('#3D40BC')
     if keyPressed:
         if key == "0":
             x-=5
@@ -29,3 +41,7 @@ def draw():
         textSize(50)
         text("GameOver",140,250)
         x+=10
+    if x1<-50:
+        x1=500
+    if x1==160:
+        txt+=1
