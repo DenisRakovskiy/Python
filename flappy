@@ -1,12 +1,9 @@
-x=255
-t=500
-t-=15
 x1=500
 txt=0
-y1=0
+y1=-990
 y2=310
 def setup() :
-    size (500,500)
+    size (500,500)     
     textSize(15)
     fill(0)
     noStroke()
@@ -18,8 +15,8 @@ def draw():
     fill(255,255,0)
     square(255,x,25)
     fill(0,255,0)
-    rect(x1,y1, 50, 230)
-    rect(x1,y2, 50, 230)
+    rect(x1,y1, 50, 1000)
+    rect(x1,y2, 50, 1000)
     textSize(20)
     fill("#8531B9")
     text( 'x:'+str(mouseX),0,30)
