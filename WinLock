@@ -1,0 +1,10 @@
+Do
+msgbox"poka",48,"LOL"
+x = inputbox("hahahaha,parol")
+if (x = "12345678910") then
+msgbox"molodec",64,"Pranton"
+exit do
+else
+msgbox"TbI loh",48,"LOL"
+end if
+loop
